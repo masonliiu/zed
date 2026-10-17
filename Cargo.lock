@@ -14862,6 +14862,7 @@ name = "recent_projects"
 version = "0.1.0"
 dependencies = [
  "anyhow",
+ "askpass",
  "chrono",
  "db",
  "dev_container",
@@ -15074,7 +15075,6 @@ dependencies = [
  "log",
  "markdown",
  "menu",
- "parking_lot",
  "release_channel",
  "remote",
  "semver",
@@ -22669,6 +22669,7 @@ dependencies = [
  "system_specs",
  "tab_switcher",
  "tabular_data_preview",
+ "task",
  "tasks_ui",
  "telemetry",
  "telemetry_events",

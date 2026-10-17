@@ -1231,7 +1231,6 @@ impl RunningState {
                     TerminalView::new(
                         terminal.clone(),
                         weak_workspace,
-                        None,
                         weak_project,
                         window,
                         cx,
@@ -1400,7 +1399,7 @@ impl RunningState {
             let terminal = terminal_task.await?;
 
             let terminal_view = cx.new_window_entity(|window, cx| {
-                TerminalView::new(terminal.clone(), workspace, None, weak_project, window, cx)
+                TerminalView::new(terminal.clone(), workspace, weak_project, window, cx)
             })?;
 
             running.update_in(cx, |running, window, cx| {
